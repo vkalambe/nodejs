@@ -1,0 +1,45 @@
+add record into table 
+{ 
+    "name": "Ashok", 
+    "address": "TS", 
+    "body": "Search is hard. Search should be easy." ,
+    "title": "On search"
+}
+
+
+when we need to add new column we just add another colunm into records, column will create automatically 
+add into table 
+{ 
+    "name": "Ashok", 
+    "address": "TS", 
+    "age": "25", 
+    "body": "Search is hard. Search should be easy." ,
+    "title": "On search"
+}
+
+select query
+
+localhost:9200/emp/post/_search
+
+where clause 
+
+localhost:9200/emp/post/_search?q=name:Anup&pretty=true
+
+delete record from index 
+
+we can delete based on id
+http://localhost:9200/emp/post/2
+
+delete index
+localhost:9200/blog
+
+
+delete all records 
+http://localhost:9200/_all
+
+AND Clause
+localhost:9200/emp/post/_search?q=name:Anup AND _id:3
+
+localhost:9200/emp/post/_search?q=name:Anup AND address:Aurag
+
+

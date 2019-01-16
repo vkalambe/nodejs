@@ -8,5 +8,9 @@
     "start": "node searchall.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "elasticsearch": "^15.3.0",
+    "moment": "^2.23.0"
+  }
 }
