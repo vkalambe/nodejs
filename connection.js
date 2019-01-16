@@ -1,7 +1,7 @@
 var elasticsearch=require('elasticsearch');
 
 var client = new elasticsearch.Client( {  
-  host: 'localhost:9200',
+  host: 'https://shrouded-depths-23225.herokuapp.com:process.env.PORT',
   log: 'trace'
 });
 
